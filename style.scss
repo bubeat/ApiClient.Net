@@ -1,10 +1,10 @@
-﻿$btnColor:#68a41c;
-$btnBorderColor:#68a41c;
+﻿$btnColor:#008DC4;
+$btnBorderColor:darken($btnColor,20%);
 $textColor:#555;
+$mainColor:#008DC4;
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400|Roboto);
-@import "flaticon.css";
-@import "font-mfizz.css";
+
 
 @mixin mobile(){
     @media(max-width:640px){
@@ -15,9 +15,8 @@ $textColor:#555;
 body {
     color:$textColor;
     margin:10px;
-    background-color:#F2FFFE;
     font-size:1.5em;
-    font-family:'Open Sans','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Segoe UI','Open Sans', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
@@ -25,8 +24,7 @@ body {
     text-align:right;
     margin-right:2rem;
     .btn-primary,a:hover{
-        background-color:#fff;
-        color:$btnColor;
+        background-color:$btnColor;
         border:1px solid $btnBorderColor;
     }
 }
@@ -36,84 +34,54 @@ body {
        padding:10px 0;
        margin-top:30px;
        text-align:center;
+
+       span{
+         font-size: 3em;
+         font-weight: bold;
+         color:$mainColor;
+       }
    }
 
 header{
    margin-bottom:4rem;
-     
+
    text-align:center;
 
    p{
-       font-size:2.5rem;
+       font-size:1.5em;
        color:#808080;
    }
 
    h1{
-    font-size:4rem;
-    
+    font-size:2.2em;
+
     }
 }
 
-
-/*.commerce{
-        color:#00527f;
-    }
-
-    .jobs{
-        color:#d18103;
-    }
-
-    .crowd{
-        color:#930032;
-    }
-
-    .auction{
-        color:#418e00;
-    }*/
-
-.languages {
-
-    font-size:3rem;
-    li{
-        margin-right:20px;
-    }
-    
-}
-
-.profile{
-    .icon{
-        font-size:12rem;
-        display:block;
-    }
-    font-size:110%;
-    text-align:center;
-    padding-bottom:40px;
-    .ex{
-        display:block;
-        font-size:80%;
-        color:#808080;
-    }
-
-    
-}
 
 a,a:hover{
     //color:#fff;
 }
 
 .newsletter{
-  
+
     border-radius:10px;
     padding:20px 20px;
     margin-top:20px;
     //margin-bottom:20px;
     button{
-        font-size:2rem;
-        margin:-6px;
-        margin-top:-8px;
         font-weight:bold;
-        border-radius:0;
-        border:2px solid $btnBorderColor;
+        font-size:2rem;
+
+        margin-top:-6px;
+
+
+        border:1px solid $btnBorderColor;
+    }
+
+    .help-block{
+      font-size: 90%;
+      padding-left:1rem;
     }
 
     .form-control{
@@ -121,12 +89,16 @@ a,a:hover{
        height:43px;
         display:inline;
        border-radius:0;
-       border:2px solid $btnBorderColor;
+       border:2px solid $btnColor;
     }
 }
 
+.btn{
+  color:white;
+}
+
 .btn-primary, .btn-primary:hover{
-    background-color:$btnColor;    
+    background-color:lighten($btnColor,15%);
 }
 
 .btn-primary:hover,.btn-primary:active,.btn-primary:focus{
@@ -170,14 +142,14 @@ address{
 
 
 footer{
-  
+
     font-size:1.2rem;
-    
+
     margin:3rem auto;
     text-align:center;
 
     width: 100%;
-} 
+}
 
 
 .white-bg{
@@ -217,26 +189,51 @@ footer{
         p{
             width:80%;
         }
-        
+
         @include mobile{
-           p{ 
+           p{
                width:100%;
 
            }
         }
 
         h2{
-            color:$textColor;
+            color:lighten($textColor,30%);
         }
 
         margin-bottom:70px;
     }
+    ul{
+      list-style: none;
+    }
+
+    li{
+      font-size: .95em;
+    }
+    li:before {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    font-size: 80%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 0 5px;
+    color:$mainColor;
+    content: "\e013";
+}
 }
 
 .error{
     color:#b40101;
 }
 
+li{
+  margin-bottom:1rem;
+}
 
 @media(max-width:768px)
 {

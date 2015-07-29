@@ -1,91 +1,63 @@
-﻿@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400|Roboto);
-@import url(flaticon.css);
-@import url(font-mfizz.css);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400|Roboto);
 body {
   color: #555;
   margin: 10px;
-  background-color: #F2FFFE;
   font-size: 1.5em;
-  font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+  font-family: 'Segoe UI','Open Sans', Tahoma, Geneva, Verdana, sans-serif; }
 
 .blog {
   text-align: right;
   margin-right: 2rem; }
   .blog .btn-primary, .blog a:hover {
-    background-color: #fff;
-    color: #68a41c;
-    border: 1px solid #68a41c; }
+    background-color: #008DC4;
+    border: 1px solid #00445e; }
 
 .logo {
   margin-bottom: 3rem;
   padding: 10px 0;
   margin-top: 30px;
   text-align: center; }
+  .logo span {
+    font-size: 3em;
+    font-weight: bold;
+    color: #008DC4; }
 
 header {
   margin-bottom: 4rem;
   text-align: center; }
   header p {
-    font-size: 2.5rem;
+    font-size: 1.5em;
     color: #808080; }
   header h1 {
-    font-size: 4rem; }
-
-/*.commerce{
-        color:#00527f;
-    }
-
-    .jobs{
-        color:#d18103;
-    }
-
-    .crowd{
-        color:#930032;
-    }
-
-    .auction{
-        color:#418e00;
-    }*/
-.languages {
-  font-size: 3rem; }
-  .languages li {
-    margin-right: 20px; }
-
-.profile {
-  font-size: 110%;
-  text-align: center;
-  padding-bottom: 40px; }
-  .profile .icon {
-    font-size: 12rem;
-    display: block; }
-  .profile .ex {
-    display: block;
-    font-size: 80%;
-    color: #808080; }
+    font-size: 2.2em; }
 
 .newsletter {
   border-radius: 10px;
   padding: 20px 20px;
   margin-top: 20px; }
   .newsletter button {
-    font-size: 2rem;
-    margin: -6px;
-    margin-top: -8px;
     font-weight: bold;
-    border-radius: 0;
-    border: 2px solid #68a41c; }
+    font-size: 2rem;
+    margin-top: -6px;
+    border: 1px solid #00445e; }
+  .newsletter .help-block {
+    font-size: 90%;
+    padding-left: 1rem; }
   .newsletter .form-control {
     width: 60%;
     height: 43px;
     display: inline;
     border-radius: 0;
-    border: 2px solid #68a41c; }
+    border: 2px solid #008DC4; }
+
+.btn {
+  color: white; }
 
 .btn-primary, .btn-primary:hover {
-  background-color: #68a41c; }
+  background-color: #12bcff; }
 
 .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
-  border-color: #68a41c; }
+  border-color: #00445e; }
 
 address {
   display: inline;
@@ -102,10 +74,8 @@ address {
 @media (max-width: 768px) {
   .tagline {
     font-size: 2.5rem; }
-
   .tagline2 {
-    font-size: 1.3rem; }
- }
+    font-size: 1.3rem; } }
 
 footer {
   font-size: 1.2rem;
@@ -127,7 +97,7 @@ footer {
     font-weight: bold;
     margin-top: 55px;
     text-align: center;
-    color: #68a41c; }
+    color: #008DC4; }
   .faq p {
     color: #6D6D6D;
     padding: 0px 30px;
@@ -135,21 +105,40 @@ footer {
     line-height: 1.5; }
   @media (max-width: 640px) {
     .faq p {
-      padding: 0 15px; }
- }
+      padding: 0 15px; } }
   .faq .what-is {
     margin-bottom: 70px; }
     .faq .what-is p {
       width: 80%; }
     @media (max-width: 640px) {
       .faq .what-is p {
-        width: 100%; }
- }
+        width: 100%; } }
     .faq .what-is h2 {
-      color: #555; }
+      color: #a2a2a2; }
+  .faq ul {
+    list-style: none; }
+  .faq li {
+    font-size: .95em; }
+  .faq li:before {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    font-size: 80%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 0 5px;
+    color: #008DC4;
+    content: "\e013"; }
 
 .error {
   color: #b40101; }
+
+li {
+  margin-bottom: 1rem; }
 
 @media (max-width: 768px) {
   .newsletter .form-control {
@@ -159,7 +148,4 @@ footer {
     margin-left: 0;
     display: block;
     width: 100%;
-    text-align: center; }
- }
-
-/*# sourceMappingURL=style.css.map */
+    text-align: center; } }
