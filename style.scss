@@ -27,6 +27,13 @@ body {
         background-color:$btnColor;
         border:1px solid $btnBorderColor;
     }
+
+
+}
+
+.social{
+  text-align: left;
+  display: :block;
 }
 
 .logo{
@@ -123,9 +130,18 @@ address{
 }
 
 
+.social{
+  font-size: 2em;
+}
 
+.twitter .fa{
+  display: none;
+}
 
-
+.twitter:hover .fa{
+  display: inline;
+  color:$mainColor;
+}
 
 @media(max-width:768px)
 {
